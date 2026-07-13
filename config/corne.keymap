@@ -125,10 +125,10 @@
 
             display-name = "0";
             bindings = <
-&kp TAB         &kp Q               &kp W  &kp E                         &kp R  &kp T             &kp Y                 &kp U            &kp I             &kp O    &kp P          &kp BACKSPACE
-&kp ESC         &longht LEFT_ALT A  &kp S  &kp D                         &kp F  &kp G             &kp H                 &kp J            &kp K             &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z               &kp X  &kp C                         &kp V  &kp B             &kp N                 &kp M            &kp COMMA         &kp DOT  &kp SLASH      &kp ENTER
-                                           &holdtap LEFT_COMMAND ESCAPE  &mo 1  &kp LEFT_SHIFT    &holdtap ENTER SPACE  &layertap 2 TAB  &kp LEFT_CONTROL
+&none    &kp Q                   &kp W               &kp E             &kp R           &kp T              &kp Y      &kp U          &kp I      &kp O    &kp P                            &none
+&kp ESC  &longht LEFT_CONTROL A  &longht LEFT_ALT S  &kp D             &kp F           &kp G              &kp H      &kp J          &kp K      &kp L    &longht RIGHT_COMMAND SEMICOLON  &kp SINGLE_QUOTE
+&none    &kp Z                   &kp X               &kp C             &kp V           &kp B              &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH                        &none
+                                                     &kp LEFT_COMMAND  &kp LEFT_SHIFT  &layertap 1 TAB    &kp SPACE  &kp BACKSPACE  &kp ENTER
             >;
         };
 
@@ -141,26 +141,19 @@
 
             display-name = "1";
             bindings = <
-&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5    &kp N6     &kp N7        &kp N8                &kp N9                 &kp N0         &trans
-&trans  &kp EXCL         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp KP_MINUS    &none     &kp CARET  &kp KP_EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp DQT
-&trans  &kp KP_MULTIPLY  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDERSCORE  &none     &none      &kp KP_PLUS   &trans                &trans                 &kp KP_DIVIDE  &trans
-                                           &trans             &trans          &trans    &trans     &trans        &trans
+&none   &kp N1           &kp N2                              &kp N3                                      &kp N4                          &kp N5           &kp N6           &kp N7          &kp N8         &kp N9            &kp N0         &none
+&trans  &kp EQUAL        &longht RIGHT_BRACKET LEFT_BRACKET  &longht RIGHT_PARENTHESIS LEFT_PARENTHESIS  &longht RIGHT_BRACE LEFT_BRACE  &kp AMPERSAND    &kp KP_MULTIPLY  &kp UNDERSCORE  &kp CARET      &kp PLUS          &kp BACKSLASH  &kp PIPE
+&none   &kp EXCLAMATION  &kp AT                              &kp HASH                                    &kp DOLLAR                      &kp PERCENT      &none            &kp MINUS       &kp LESS_THAN  &kp GREATER_THAN  &kp KP_SLASH   &none
+                                                             &trans                                      &trans                          &trans           &trans           &trans          &trans
             >;
         };
 
         layer_2 {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "2";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp N9           &kp NUMBER_0  &trans
-&trans  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR     &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PIPE      &trans
-&trans  &kp TILDE     &kp GRAVE     &kp PERCENT   &kp AMPERSAND  &none           &none           &kp PAGE_DOWN   &trans        &trans           &trans        &trans
-                                    &trans        &trans         &trans          &trans          &trans          &trans
+&none    &kp TAB         &kp N7  &kp N8   &kp N9   &kp PLUS        &none     &kp F5    &kp F6  &kp F7     &kp F8  &trans
+&kp ESC  &kp LEFT_SHIFT  &kp N4  &kp N5   &kp N6   &kp ASTERISK    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&none    &kp MINUS       &kp N1  &kp N2   &kp N3   &kp SLASH       &none     &kp F1    &kp F2  &kp F3     &kp F4  &trans
+                                 &kp DOT  &kp RET  &kp BSPC        &trans    &trans    &trans
             >;
         };
     };
